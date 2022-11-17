@@ -1,0 +1,422 @@
+@font-face {
+	font-family: "Rajdhani";
+	src: url("../assets/fonts/Rajdhani-SemiBold.ttf") format("ttf"),
+		url("../assets/fonts/Rajdhani-SemiBold.woff") format("woff");
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: Rajdhani, sans-serif;
+}
+
+:root {
+	font-size: min(calc(1em + 1vw), 4em);
+	--layout-spacing: max(8vh, 3em);
+	--grid-spacing: calc(var(--layout-spacing) * 2);
+	--purple: #524dd0;
+	--blue: #00ffec;
+	--white: #fff;
+	line-height: 140%;
+	--black: #110f2a;
+	--purple-opacity: rgb(82, 77, 208, 0.4);
+}
+
+body > * + * {
+	margin-top: var(--layout-spacing);
+}
+
+header {
+	display: flex;
+	text-align: center;
+	background-color: var(--purple);
+	color: var(--white);
+	width: 100%;
+	height: 84px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* menu */
+
+.menu-button {
+	background: none;
+	border: none;
+	height: 84px;
+	margin-right: 0.5rem;
+}
+
+.menu-button span {
+	background-color: var(--white);
+	height: 2.5px;
+	width: 1.5rem;
+	display: block;
+	margin: 5px;
+	border-radius: 1rem;
+}
+
+.nav {
+	display: none;
+	top: 84px;
+	right: 0;
+}
+
+.nav.open {
+	display: block;
+	/* justify-content: flex-end; */
+	z-index: 2;
+	position: absolute;
+}
+
+.menu-content li {
+	width: 100%;
+	height: 3.5rem;
+	padding: 0;
+	border-right: solid 1px var(--purple);
+	border-bottom: solid 1px var(--purple);
+	background-color: var(--white);
+}
+
+.menu-content a {
+	background-color: var(--white);
+	border: none;
+	text-decoration: none;
+}
+
+/* header */
+
+h1 {
+	padding-top: 0.5em;
+}
+
+.logo {
+	height: 50px;
+	width: auto;
+}
+
+.logo1 {
+	display: none;
+}
+
+body {
+	overflow-y: scroll;
+}
+
+/* inleiding */
+
+.inleiding {
+	margin-top: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.inleiding img {
+	opacity: 0.28;
+	position: absolute;
+	object-fit: cover;
+	/* top: -15rem;
+	left: -25rem; */
+	width: 100%;
+	height: 100%;
+}
+
+.inleiding ::before {
+	content: "";
+	background-color: rgb(82, 77, 208, 1);
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+}
+
+.inleiding h1 {
+	padding: 1rem;
+	position: relative;
+	color: var(--white);
+}
+
+.inleiding h2 {
+	padding: 1rem;
+	position: relative;
+	color: var(--white);
+}
+
+.inleiding p {
+	color: var(--white);
+	padding: 1rem;
+	position: relative;
+}
+
+/* kaart */
+
+/* overzicht */
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+li {
+	padding: 2em;
+	grid-row: 1 / span 2;
+	justify-self: center;
+	display: flex;
+	overflow-x: hidden;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.overzicht {
+	background-color: var(--purple);
+	color: var(--white);
+}
+
+.utrecht {
+	background-color: var(--white);
+	color: var(--black);
+	border-bottom: solid 1px var(--purple);
+}
+
+.schiedam {
+	background-color: var(--purple);
+	color: var(--white);
+	border-bottom: solid 1px var(--blue);
+}
+
+.amsterdam {
+	background-color: var(--white);
+	color: var(--black);
+	border-bottom: solid 1px var(--purple);
+}
+
+.rotterdam {
+	background-color: var(--purple);
+	color: var(--white);
+	border-bottom: solid 1px var(--blue);
+}
+
+h3 {
+	width: 60%;
+}
+
+.more-info {
+	max-height: 0;
+	width: 100%;
+	overflow: hidden;
+	transition: 1s;
+	display: flex;
+	justify-content: space-between;
+}
+
+.straat {
+	height: auto;
+	width: 7em;
+}
+
+/*knop*/
+
+.button {
+	background-color: var(--blue);
+	border-radius: 5px;
+	width: min(15vw, 15em);
+	height: 2em;
+	border: none;
+}
+
+.expand .more-info {
+	max-height: 400px;
+	padding-top: 1em;
+}
+
+.meer {
+	position: relative;
+}
+
+.minder {
+	display: none;
+}
+
+.expand .meer {
+	display: none;
+}
+
+.expand .minder {
+	display: block;
+}
+
+.m-m {
+	position: relative;
+}
+
+footer {
+	background-color: var(--black);
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0;
+}
+
+.footer {
+	align-self: center;
+	font-size: min(calc(0.75em + 0.75vw), 2em);
+	padding-left: 1.8rem;
+}
+
+a {
+	border: solid 2px var(--blue);
+	border-radius: 0.25em;
+	background-color: var(--blue);
+	align-self: center;
+	margin: 1em;
+	color: black;
+	font-size: min(calc(0.75em + 0.75vw), 2em);
+}
+
+.logo3 {
+	display: block;
+	width: auto;
+	height: 84px;
+}
+
+/* responsive maken */
+
+@media (min-width: 900px) {
+	.logo {
+		display: none;
+	}
+
+	.logo1 {
+		display: block;
+		width: auto;
+		height: 84px;
+		align-self: flex-start;
+	}
+
+	.nav {
+		margin-top: 0;
+		top: 0;
+		height: 84px;
+		display: block;
+		position: static;
+	}
+
+	.menu-button {
+		display: none;
+	}
+
+	.menu-content {
+		display: flex;
+		background-color: var(--purple);
+	}
+
+	/* .nav.open {
+		display: flex;
+		width: 100%;
+		position: absolute;
+	} */
+
+	.nav.open {
+		height: 84px;
+		top: 0;
+		z-index: 0;
+	}
+
+	.menu-content li {
+		background-color: var(--purple);
+		/* border: 1px solid var(--blue); */
+		padding: 0;
+		margin: 0rem 0.75rem;
+		flex-wrap: nowrap;
+		width: auto;
+	}
+
+	.menu-content a {
+		background-color: var(--purple);
+		color: var(--white);
+		margin: 0;
+	}
+
+	.menu-content a:hover {
+		color: var(--black);
+	}
+
+	/*
+	ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+
+	li {
+		border-right: solid 1px var(--purple);
+	}
+
+	.stad-naam {
+		grid-column: 1/3;
+		width: 100%;
+	}
+
+	 #utrecht {
+		grid-row: 1/2;
+	} 
+
+	.tijn {
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+
+	.sarah {
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+
+	#schiedam {
+		grid-column: 1/3;
+		grid-row: 3/4;
+	}
+
+	.manon {
+		grid-column: 1/2;
+		grid-row: 4/5;
+	}
+
+	.ahmed {
+		grid-column: 2/3;
+		grid-row: 4/5;
+	}
+
+	#amsterdam {
+		grid-row: 5/6;
+	}
+
+	.olivia {
+		grid-column: 1/2;
+		grid-row: 6/7;
+	}
+
+	.karel {
+		grid-column: 2/3;
+		grid-row: 6/7;
+	}
+
+	#rotterdam {
+		grid-row: 7/8;
+	}
+
+	.wafa {
+		grid-column: 1/2;
+		grid-row: 8/9;
+	}
+
+	 .witcher {
+		grid-column: 2/3;
+		grid-row: 8/9;
+	} */
+
+	.button {
+		width: 5em;
+		height: 2em;
+	}
+}

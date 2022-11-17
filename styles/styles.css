@@ -173,9 +173,10 @@ li {
 	justify-content: space-between;
 }
 
-.overzicht {
+.beginbalk {
 	background-color: var(--purple);
 	color: var(--white);
+	width: 100%;
 }
 
 .utrecht {
@@ -202,9 +203,7 @@ li {
 	border-bottom: solid 1px var(--blue);
 }
 
-h3 {
-	width: 60%;
-}
+
 
 .more-info {
 	max-height: 0;
@@ -347,11 +346,21 @@ a {
 		color: var(--black);
 	}
 
-	li {
+	.overzicht {
+		max-width: 80%;
+		margin-left: 10%;
 
 	}
 
+	.stad {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 
+	.naam {
+		max-width: 35%;
+	}
 
 
 

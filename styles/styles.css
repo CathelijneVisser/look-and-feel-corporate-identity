@@ -8,6 +8,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	font-family: Rajdhani, sans-serif;
+	scroll-behavior: smooth;
 }
 
 :root {
@@ -35,7 +36,8 @@ header {
 	height: 84px;
 	justify-content: space-between;
 	align-items: center;
-}
+	font-size: .5em;
+	box-shadow: rgba(82, 77, 208, 0.24) 0px 3px 8px;}
 
 /* menu */
 
@@ -147,6 +149,8 @@ body {
 	color: var(--white);
 	padding: 1rem;
 	position: relative;
+	max-width: 30em;
+
 }
 
 /* kaart */
@@ -330,6 +334,7 @@ a {
 		margin: 0rem 0.75rem;
 		flex-wrap: nowrap;
 		width: auto;
+		height: 84px;
 	}
 
 	.menu-content a {
@@ -341,6 +346,16 @@ a {
 	.menu-content a:hover {
 		color: var(--black);
 	}
+
+	li {
+
+	}
+
+
+
+
+
+
 
 	/*
 	ul {
@@ -416,6 +431,7 @@ a {
 	} */
 
 	.button {
+		display: none;
 		width: 5em;
 		height: 2em;
 	}

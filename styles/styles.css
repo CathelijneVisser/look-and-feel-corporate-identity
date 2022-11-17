@@ -89,6 +89,7 @@ header {
 
 h1 {
 	padding-top: 0.5em;
+	font-size: min(calc(2em + 1vw), 4em);
 }
 
 .logo {
@@ -177,6 +178,7 @@ li {
 	background-color: var(--purple);
 	color: var(--white);
 	width: 100%;
+	
 }
 
 .utrecht {
@@ -346,10 +348,23 @@ a {
 		color: var(--black);
 	}
 
+	h1 {
+		font-size: min(calc(3em + 1vw), 4em);
+	}
+
+	h2 {
+		font-size: min(calc(2em + 1vw), 4em);
+	}
+
 	.overzicht {
-		max-width: 80%;
-		margin-left: 10%;
+		max-width: 90%;
+		margin-left: 5%;
 		margin-bottom: 5%;
+	}
+
+	.beginbalk {
+		margin-left: 0;
+		max-width: 100%;
 	}
 
 	.stad {
@@ -360,8 +375,17 @@ a {
 
 	.naam {
 
-		max-width: 35%;
+		max-width: 45%;
 	}
+
+	.utrecht {
+		border: solid 2px var(--purple);
+	}
+
+	.amsterdam {
+		border: solid 2px var(--purple);
+	}
+
 
 
 

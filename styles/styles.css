@@ -349,7 +349,7 @@ a {
 	.overzicht {
 		max-width: 80%;
 		margin-left: 10%;
-
+		margin-bottom: 5%;
 	}
 
 	.stad {
@@ -359,6 +359,7 @@ a {
 	}
 
 	.naam {
+
 		max-width: 35%;
 	}
 

@@ -23,6 +23,10 @@
 	--purple-opacity: rgb(82, 77, 208, 0.4);
 }
 
+:focus {
+	outline: solid 2px var(--black);
+}
+
 body > * + * {
 	margin-top: var(--layout-spacing);
 }
@@ -36,7 +40,7 @@ header {
 	height: 84px;
 	justify-content: space-between;
 	align-items: center;
-	font-size: 0.5em;
+
 	box-shadow: rgba(82, 77, 208, 0.24) 0px 3px 8px;
 }
 
@@ -84,6 +88,7 @@ header {
 	background-color: var(--white);
 	border: none;
 	text-decoration: none;
+	font-size: 0.5em;
 }
 
 /* header */
@@ -155,6 +160,14 @@ body {
 }
 
 /* kaart */
+
+.map {
+	margin: 0;
+}
+
+.header-map {
+	padding-left: 1rem;
+}
 
 /* overzicht */
 
@@ -285,6 +298,10 @@ a {
 /* responsive maken */
 
 @media (min-width: 900px) {
+	:focus {
+		outline: solid 2px var(--white);
+	}
+
 	.logo {
 		display: none;
 	}
@@ -313,13 +330,7 @@ a {
 		background-color: var(--purple);
 	}
 
-	/* .nav.open {
-		display: flex;
-		width: 100%;
-		position: absolute;
-	} */
-
-	.nav.open {
+	.nav {
 		height: 84px;
 		top: 0;
 		z-index: 0;
@@ -353,6 +364,19 @@ a {
 		font-size: min(calc(2em + 1vw), 4em);
 	}
 
+	ul p {
+		font-size: min(calc(1em + 1vw), 0.75em);
+	}
+
+	li {
+		padding: 1rem;
+	}
+
+	.straat {
+		width: 5em;
+		height: auto;
+	}
+
 	.overzicht {
 		max-width: 90%;
 		margin-left: 5%;
@@ -364,14 +388,20 @@ a {
 		max-width: 100%;
 	}
 
-	.stad {
+	.container {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
 
+	.stad {
+		width: 90%;
+		border: none;
+	}
+
 	.naam {
-		max-width: 40%;
+		max-width: 42.5%;
+		flex-grow: 1;
 	}
 
 	.utrecht {
@@ -382,82 +412,14 @@ a {
 		border: solid 2px var(--purple);
 	}
 
-	/*
-	ul {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	}
-
-	li {
-		border-right: solid 1px var(--purple);
-	}
-
-	.stad-naam {
-		grid-column: 1/3;
-		width: 100%;
-	}
-
-	 #utrecht {
-		grid-row: 1/2;
-	} 
-
-	.tijn {
-		grid-column: 1/2;
-		grid-row: 2/3;
-	}
-
-	.sarah {
-		grid-column: 2/3;
-		grid-row: 2/3;
-	}
-
-	#schiedam {
-		grid-column: 1/3;
-		grid-row: 3/4;
-	}
-
-	.manon {
-		grid-column: 1/2;
-		grid-row: 4/5;
-	}
-
-	.ahmed {
-		grid-column: 2/3;
-		grid-row: 4/5;
-	}
-
-	#amsterdam {
-		grid-row: 5/6;
-	}
-
-	.olivia {
-		grid-column: 1/2;
-		grid-row: 6/7;
-	}
-
-	.karel {
-		grid-column: 2/3;
-		grid-row: 6/7;
-	}
-
-	#rotterdam {
-		grid-row: 7/8;
-	}
-
-	.wafa {
-		grid-column: 1/2;
-		grid-row: 8/9;
-	}
-
-	 .witcher {
-		grid-column: 2/3;
-		grid-row: 8/9;
-	} */
-
 	.button {
 		display: none;
 		width: 5em;
 		height: 2em;
+	}
+
+	.more-info {
+		max-height: 400px;
+		padding-top: 1em;
 	}
 }

@@ -1,213 +1,282 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CodingTheCurbs</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-  </head>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CodingTheCurbs</title>
+		<link rel="stylesheet" href="styles/styles.css" />
+	</head>
 
-  <body>  
-    <header>
-      <img class="logo" src="./assets/logo1.png" alt="Logo" />
-      <img class="logo1" src="./assets/logoont.png" alt="Logo" />
+	<body>
+		<header>
+			<img class="logo" src="./assets/logo1.png" alt="Logo" />
+			<img class="logo1" src="./assets/logoont.png" alt="Logo" />
 
-      <button class="menu-button" aria-pressed="true">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="nav open">
-        <ul class="menu-content">
-          <li><a href="#over-ons">Inleiding</a></li>
-          <li><a href="#kaart">Kaart - To be made</a></li>
-          <li><a href="#overzicht">Overzicht</a></li>
-          <li>
-            <a
-              href="https://www.codingthecurbs.com/contact?lang=nl"
-              target="_blank"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+			<button class="menu-button" aria-pressed="true">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<nav class="nav">
+				<ul class="menu-content">
+					<li><a href="#over-ons">Inleiding</a></li>
+					<li><a href="#kaart">Kaart - To be made</a></li>
+					<li><a href="#overzicht">Overzicht</a></li>
+					<li>
+						<a
+							href="https://www.codingthecurbs.com/contact?lang=nl"
+							target="_blank"
+							>Contact</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-    <article class="inleiding" id="over-ons">
-      <img src="./assets/achtergrond-img.JPG" alt="" />
-      <h1>Coding the curbs</h1>
-      <h2>Flatten the peak</h2>
+		<article class="inleiding" id="over-ons">
+			<img src="./assets/achtergrond-img.JPG" alt="" />
+			<h1>Coding the curbs</h1>
+			<h2>Flatten the peak</h2>
 
-      <p>
-        Coding the Curbs spreidt het gebruik van beschikbare plekken en zorgt
-        daardoor dat de schaarse ruimte in binnensteden beter wordt benut. Door
-        het beter plannen worden er 20% minder kilometers afgelegd. Logistieke
-        ritten worden effectiever.
-        <br /><br />
-        Dit wordt gedaan door plekken te verhuren voor verschillende doeleinden,
-        hierdoor kan er op het ene moment geladen en gelost worden, terwijl er
-        op het andere moment een cafe wat extra ruimte voor het terras heeft.
-        <br /><br />
-        Hieronder kunt u een kaart vinden waar de smartspaces op staan. En u
-        kunt een lijst vinden met wat extra informatie over de specifieke
-        smartspaces.
-      </p>
-    </article>
+			<p>
+				Coding the Curbs spreidt het gebruik van beschikbare plekken en
+				zorgt daardoor dat de schaarse ruimte in binnensteden beter
+				wordt benut. Door het beter plannen worden er 20% minder
+				kilometers afgelegd. Logistieke ritten worden effectiever.
+				<br /><br />
+				Dit wordt gedaan door plekken te verhuren voor verschillende
+				doeleinden, hierdoor kan er op het ene moment geladen en gelost
+				worden, terwijl er op het andere moment een cafe wat extra
+				ruimte voor het terras heeft.
+				<br /><br />
+				Hieronder kunt u een kaart vinden waar de smartspaces op staan.
+				En u kunt een lijst vinden met wat extra informatie over de
+				specifieke smartspaces.
+			</p>
+		</article>
 
-    <ul id="overzicht">
-      <li class="overzicht beginbalk"><h3>Overzicht:</h3></li>
-      <li class="stad utrecht overzicht" id="utrecht">
-        <h3>Utrecht:</h3>
-      </li>
-      <li class="tijn utrecht overzicht naam expand">
-        <h3>Tijn</h3>
-        <button id="tijn" class="button js-expand" type="button" aria-hidden>
-          <span class="meer">Meer</span>
-          <span class="minder">Minder</span>
-        </button>
-        <div class="more-info">
-          <p>
-            Stad: Utrecht <br />
-            Adres: Twijnstaart 26 <br />
-            Grootte: 1,5 plek <br />
-            Beschikbaarheid: 8-17
-          </p>
-          <img class="straat" src="./assets/Utrecht_01 (1).jpg" alt="" />
-        </div>
-      </li>
-      <li class="sarah utrecht overzicht naam">
-        <h3>Sarah</h3>
-        <button id="sarah" class="button js-expand" type="button" aria-hidden>
-          <span class="meer">Meer</span>
-          <span class="minder">Minder</span>
-        </button>
-        <div class="more-info">
-          <p>
-            Stad: Utrecht <br />
-            Adres: Twijnstaart 22 <br />
-            Grootte: 1,5 plek <br />
-            Beschikbaarheid:
-          </p>
-          <img class="straat" src="./assets/Utrecht_02.jpg" alt="" />
-        </div>
-      </li>
+		<article class="map" id="kaart">
+			<header class="header-map"><h3>Kaart</h3></header>
+		</article>
 
-      <li class="stad schiedam overzicht" id="schiedam">
-        <h3>Schiedam:</h3>
-      </li>
-      <li class="manon schiedam overzicht naam">
-        <h3>Manon</h3>
-        <button id="manon" class="button js-expand" type="button" aria-hidden>
-          <span class="meer">Meer</span>
-          <span class="minder">Minder</span>
-        </button>
-        <div class="more-info">
-          <p>
-            Stad: Schiedam <br />
-            Adres: Lange haven 56 <br />
-            Grootte: 1 plek <br />
-            Beschikbaarheid:
-          </p>
-          <img class="straat" src="./assets/Schiedam_01.jpg" alt="" />
-        </div>
-      </li>
-      <li class="ahmed schiedam overzicht naam">
-        <h3>Ahmed</h3>
-        <button id="ahmed" class="button js-expand" type="button" aria-hidden>
-          <span class="meer">Meer</span>
-          <span class="minder">Minder</span>
-        </button>
-        <div class="more-info">
-          <p>
-            Stad: Schiedam <br />
-            Adres: Lange haven 72 <br />
-            Grootte: 1 plek <br />
-            Beschikbaarheid:
-          </p>
-          <img class="straat" src="./assets/Schiedam_02.jpg" alt="" />
-        </div>
-      </li>
-      <li class="stad amsterdam overzicht" id="amsterdam">
-        <h3>Amsterdam:</h3>
-      </li>
-      <li class="olivia amsterdam overzicht naam">
-        <h3>Olivia</h3>
-        <button id="olivia" class="button js-expand" type="button" aria-hidden>
-          <span class="meer">Meer</span>
-          <span class="minder">Minder</span>
-        </button>
-        <div class="more-info">
-          <p>
-            Stad: Amsterdam <br />
-            Adres: Overtoom 450 <br />
-            Grootte: 2 plekken <br />
-            Beschikbaarheid:
-          </p>
-          <img class="straat" src="./assets/Amsterdam_01.jpg" alt="" />
-        </div>
-      </li>
-      <li class="karel amsterdam overzicht naam">
-        <h3>Karel</h3>
-        <button id="karel" class="button js-expand" type="button" aria-hidden>
-          <span class="meer">Meer</span>
-          <span class="minder">Minder</span>
-        </button>
-        <div class="more-info">
-          <p>
-            Stad: Amsterdam <br />
-            Adres: Kinkerstraat 272 <br />
-            Grootte: 1 plek <br />
-            Beschikbaarheid:
-          </p>
-          <img class="straat" src="./assets/Amsterdam_02.jpg" alt="" />
-        </div>
-      </li>
-      <li class="stad rotterdam overzicht" id="rotterdam">
-        <h3>Rotterdam:</h3>
-      </li>
-      <li class="wafa rotterdam overzicht naam">
-        <h3>Wafa</h3>
-        <button id="wafa" class="button js-expand" type="button" aria-hidden>
-          <span class="meer">Meer</span>
-          <span class="minder">Minder</span>
-        </button>
-        <div class="more-info">
-          <p>
-            Stad: Rotterdam <br />
-            Adres: West-kruiskade 93 <br />
-            Grootte: 1 plek <br />
-            Beschikbaarheid:
-          </p>
-          <img class="straat" src="./assets/Rotterdam_01.jpg" alt="" />
-        </div>
-      </li>
-      <li class="witcher rotterdam overzicht naam">
-        <h3>Witcher</h3>
-        <button id="witcher" class="button js-expand" type="button" aria-hidden>
-          <span class="meer">Meer</span>
-          <span class="minder">Minder</span>
-        </button>
-        <div class="more-info">
-          <p>
-            Stad: Rotterdam <br />
-            Adres: Witte de Withstraat 32 <br />
-            Grootte: 1 plek <br />
-            Beschikbaarheid:
-          </p>
-          <img class="straat" src="./assets/Rotterdam_02.jpg" alt="" />
-        </div>
-      </li>
-    </ul>
-    <script src="./scripts/script.js"></script>
-    <footer id="footer">
-      <img class="logo3" src="./assets/logoont.png" alt="Logo" />
-      <div class="footer">
-        <a href="https://www.codingthecurbs.com/?lang=nl" target="_blank"
-          >Website</a
-        >
-        <a href="https://www.codingthecurbs.com/contact?lang=nl" target="_blank"
-          >Contact</a
-        >
-      </div>
-    </footer>
-  </body>
+		<ul class="container" id="overzicht">
+			<li class="overzicht beginbalk"><h3>Overzicht</h3></li>
+			<li class="stad utrecht overzicht" id="utrecht">
+				<h3>Utrecht:</h3>
+			</li>
+			<li class="tijn utrecht overzicht naam expand">
+				<h3>Tijn</h3>
+				<button
+					id="tijn"
+					class="button js-expand"
+					type="button"
+					aria-hidden
+				>
+					<span class="meer">Meer</span>
+					<span class="minder">Minder</span>
+				</button>
+				<div class="more-info">
+					<p>
+						Stad: Utrecht <br />
+						Adres: Twijnstaart 26 <br />
+						Grootte: 1,5 plek <br />
+						Beschikbaarheid: 8-17
+					</p>
+					<img
+						class="straat"
+						src="./assets/Utrecht_01 (1).jpg"
+						alt=""
+					/>
+				</div>
+			</li>
+			<li class="sarah utrecht overzicht naam">
+				<h3>Sarah</h3>
+				<button
+					id="sarah"
+					class="button js-expand"
+					type="button"
+					aria-hidden
+				>
+					<span class="meer">Meer</span>
+					<span class="minder">Minder</span>
+				</button>
+				<div class="more-info">
+					<p>
+						Stad: Utrecht <br />
+						Adres: Twijnstaart 22 <br />
+						Grootte: 1,5 plek <br />
+						Beschikbaarheid:
+					</p>
+					<img class="straat" src="./assets/Utrecht_02.jpg" alt="" />
+				</div>
+			</li>
+
+			<li class="stad schiedam overzicht" id="schiedam">
+				<h3>Schiedam:</h3>
+			</li>
+			<li class="manon schiedam overzicht naam">
+				<h3>Manon</h3>
+				<button
+					id="manon"
+					class="button js-expand"
+					type="button"
+					aria-hidden
+				>
+					<span class="meer">Meer</span>
+					<span class="minder">Minder</span>
+				</button>
+				<div class="more-info">
+					<p>
+						Stad: Schiedam <br />
+						Adres: Lange haven 56 <br />
+						Grootte: 1 plek <br />
+						Beschikbaarheid:
+					</p>
+					<img class="straat" src="./assets/Schiedam_01.jpg" alt="" />
+				</div>
+			</li>
+			<li class="ahmed schiedam overzicht naam">
+				<h3>Ahmed</h3>
+				<button
+					id="ahmed"
+					class="button js-expand"
+					type="button"
+					aria-hidden
+				>
+					<span class="meer">Meer</span>
+					<span class="minder">Minder</span>
+				</button>
+				<div class="more-info">
+					<p>
+						Stad: Schiedam <br />
+						Adres: Lange haven 72 <br />
+						Grootte: 1 plek <br />
+						Beschikbaarheid:
+					</p>
+					<img class="straat" src="./assets/Schiedam_02.jpg" alt="" />
+				</div>
+			</li>
+			<li class="stad amsterdam overzicht" id="amsterdam">
+				<h3>Amsterdam:</h3>
+			</li>
+			<li class="olivia amsterdam overzicht naam">
+				<h3>Olivia</h3>
+				<button
+					id="olivia"
+					class="button js-expand"
+					type="button"
+					aria-hidden
+				>
+					<span class="meer">Meer</span>
+					<span class="minder">Minder</span>
+				</button>
+				<div class="more-info">
+					<p>
+						Stad: Amsterdam <br />
+						Adres: Overtoom 450 <br />
+						Grootte: 2 plekken <br />
+						Beschikbaarheid:
+					</p>
+					<img
+						class="straat"
+						src="./assets/Amsterdam_01.jpg"
+						alt=""
+					/>
+				</div>
+			</li>
+			<li class="karel amsterdam overzicht naam">
+				<h3>Karel</h3>
+				<button
+					id="karel"
+					class="button js-expand"
+					type="button"
+					aria-hidden
+				>
+					<span class="meer">Meer</span>
+					<span class="minder">Minder</span>
+				</button>
+				<div class="more-info">
+					<p>
+						Stad: Amsterdam <br />
+						Adres: Kinkerstraat 272 <br />
+						Grootte: 1 plek <br />
+						Beschikbaarheid:
+					</p>
+					<img
+						class="straat"
+						src="./assets/Amsterdam_02.jpg"
+						alt=""
+					/>
+				</div>
+			</li>
+			<li class="stad rotterdam overzicht" id="rotterdam">
+				<h3>Rotterdam:</h3>
+			</li>
+			<li class="wafa rotterdam overzicht naam">
+				<h3>Wafa</h3>
+				<button
+					id="wafa"
+					class="button js-expand"
+					type="button"
+					aria-hidden
+				>
+					<span class="meer">Meer</span>
+					<span class="minder">Minder</span>
+				</button>
+				<div class="more-info">
+					<p>
+						Stad: Rotterdam <br />
+						Adres: West-kruiskade 93 <br />
+						Grootte: 1 plek <br />
+						Beschikbaarheid:
+					</p>
+					<img
+						class="straat"
+						src="./assets/Rotterdam_01.jpg"
+						alt=""
+					/>
+				</div>
+			</li>
+			<li class="witcher rotterdam overzicht naam">
+				<h3>Witcher</h3>
+				<button
+					id="witcher"
+					class="button js-expand"
+					type="button"
+					aria-hidden
+				>
+					<span class="meer">Meer</span>
+					<span class="minder">Minder</span>
+				</button>
+				<div class="more-info">
+					<p>
+						Stad: Rotterdam <br />
+						Adres: Witte de Withstraat 32 <br />
+						Grootte: 1 plek <br />
+						Beschikbaarheid:
+					</p>
+					<img
+						class="straat"
+						src="./assets/Rotterdam_02.jpg"
+						alt=""
+					/>
+				</div>
+			</li>
+		</ul>
+		<script src="./scripts/script.js"></script>
+		<footer id="footer">
+			<img class="logo3" src="./assets/logoont.png" alt="Logo" />
+			<div class="footer">
+				<a
+					href="https://www.codingthecurbs.com/?lang=nl"
+					target="_blank"
+					>Website</a
+				>
+				<a
+					href="https://www.codingthecurbs.com/contact?lang=nl"
+					target="_blank"
+					>Contact</a
+				>
+			</div>
+		</footer>
+	</body>
 </html>

@@ -36,8 +36,9 @@ header {
 	height: 84px;
 	justify-content: space-between;
 	align-items: center;
-	font-size: .5em;
-	box-shadow: rgba(82, 77, 208, 0.24) 0px 3px 8px;}
+	font-size: 0.5em;
+	box-shadow: rgba(82, 77, 208, 0.24) 0px 3px 8px;
+}
 
 /* menu */
 
@@ -130,7 +131,7 @@ body {
 	left: 0;
 	top: 0;
 	z-index: -1;
-	width: 100%;
+	min-width: 100%;
 	height: 100%;
 }
 
@@ -151,7 +152,6 @@ body {
 	padding: 1rem;
 	position: relative;
 	max-width: 30em;
-
 }
 
 /* kaart */
@@ -178,7 +178,6 @@ li {
 	background-color: var(--purple);
 	color: var(--white);
 	width: 100%;
-	
 }
 
 .utrecht {
@@ -204,8 +203,6 @@ li {
 	color: var(--white);
 	border-bottom: solid 1px var(--blue);
 }
-
-
 
 .more-info {
 	max-height: 0;
@@ -374,8 +371,7 @@ a {
 	}
 
 	.naam {
-
-		max-width: 45%;
+		max-width: 40%;
 	}
 
 	.utrecht {
@@ -385,11 +381,6 @@ a {
 	.amsterdam {
 		border: solid 2px var(--purple);
 	}
-
-
-
-
-
 
 	/*
 	ul {

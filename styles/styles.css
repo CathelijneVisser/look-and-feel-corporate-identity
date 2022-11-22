@@ -412,6 +412,14 @@ a {
 		border: solid 2px var(--purple);
 	}
 
+	.rotterdam {
+		border: none;
+	}
+
+	.schiedam {
+		border: none;
+	}
+
 	.button {
 		display: none;
 		width: 5em;

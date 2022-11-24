@@ -377,6 +377,21 @@ a {
 		height: auto;
 	}
 
+	.map {
+		max-width: 90%;
+		margin-left: 5%;
+		margin-bottom: 5%;
+	}
+
+
+
+
+
+
+
+
+
+
 	.overzicht {
 		max-width: 90%;
 		margin-left: 5%;

@@ -23,9 +23,9 @@
 	--purple-opacity: rgb(82, 77, 208, 0.4);
 }
 
-:focus {
+/* :focus-visible {
 	outline: solid 2px var(--black);
-}
+} */
 
 body > * + * {
 	margin-top: var(--layout-spacing);
@@ -235,6 +235,17 @@ li {
 	width: min(15vw, 15em);
 	height: 2em;
 	border: none;
+	transition: 0.2s;
+}
+
+.purple-button:hover {
+	background-color: var(--purple);
+	color: var(--white);
+}
+
+.white-button:hover {
+	background-color: var(--white);
+	color: var(--purple);
 }
 
 .expand .more-info {
@@ -261,6 +272,8 @@ li {
 .m-m {
 	position: relative;
 }
+
+/*footer*/
 
 footer {
 	background-color: var(--black);

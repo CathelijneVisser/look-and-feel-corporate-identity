@@ -13,12 +13,12 @@
 
 :root {
 	font-size: min(calc(1em + 1vw), 4em);
+	line-height: 140%;
 	--layout-spacing: max(8vh, 3em);
 	--grid-spacing: calc(var(--layout-spacing) * 2);
 	--purple: #524dd0;
 	--blue: #00ffec;
 	--white: #fff;
-	line-height: 140%;
 	--black: #110f2a;
 	--purple-opacity: rgb(82, 77, 208, 0.4);
 }
@@ -40,7 +40,6 @@ header {
 	height: 84px;
 	justify-content: space-between;
 	align-items: center;
-
 	box-shadow: rgba(82, 77, 208, 0.24) 0px 3px 8px;
 }
 
@@ -70,7 +69,6 @@ header {
 
 .nav.open {
 	display: block;
-	/* justify-content: flex-end; */
 	z-index: 2;
 	position: absolute;
 }
@@ -88,7 +86,7 @@ header {
 	background-color: var(--white);
 	border: none;
 	text-decoration: none;
-	font-size: 0.5em;
+	font-size: 0.75em;
 }
 
 /* header */
@@ -123,8 +121,6 @@ body {
 	opacity: 0.28;
 	position: absolute;
 	object-fit: cover;
-	/* top: -15rem;
-	left: -25rem; */
 	width: 100%;
 	height: 100%;
 }
@@ -382,15 +378,6 @@ a {
 		margin-left: 5%;
 		margin-bottom: 5%;
 	}
-
-
-
-
-
-
-
-
-
 
 	.overzicht {
 		max-width: 90%;

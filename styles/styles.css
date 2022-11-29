@@ -43,7 +43,9 @@ header {
 	box-shadow: rgba(82, 77, 208, 0.24) 0px 3px 8px;
 }
 
+/*************************************************************************************************/
 /* menu */
+/*************************************************************************************************/
 
 .menu-button {
 	background: none;
@@ -89,7 +91,65 @@ header {
 	font-size: 0.75em;
 }
 
+@media (min-width: 900px) {
+	.logo {
+		display: none;
+	}
+
+	.logo1 {
+		display: block;
+		width: auto;
+		height: 84px;
+		align-self: flex-start;
+	}
+
+	.nav {
+		margin-top: 0;
+		top: 0;
+		height: 84px;
+		display: block;
+		position: static;
+	}
+
+	.menu-button {
+		display: none;
+	}
+
+	.menu-content {
+		display: flex;
+		background-color: var(--purple);
+	}
+
+	.nav {
+		height: 84px;
+		top: 0;
+		z-index: 0;
+	}
+
+	.menu-content li {
+		background-color: var(--purple);
+		/* border: 1px solid var(--blue); */
+		padding: 0;
+		margin: 0rem 0.75rem;
+		flex-wrap: nowrap;
+		width: auto;
+		height: 84px;
+	}
+
+	.menu-content a {
+		background-color: var(--purple);
+		color: var(--white);
+		margin: 0;
+	}
+
+	.menu-content a:hover {
+		color: var(--black);
+	}
+}
+
+/*******************************************************************************************************/
 /* header */
+/********************************************************************************************/
 
 h1 {
 	padding-top: 0.5em;
@@ -109,7 +169,13 @@ body {
 	overflow-y: scroll;
 }
 
+@media (min-width: 900px) {
+
+}
+
+/***************************************************************************************aa/
 /* inleiding */
+/*************************************************************************************/
 
 .inleiding {
 	margin-top: 0;
@@ -155,7 +221,13 @@ body {
 	max-width: 30em;
 }
 
+@media (min-width: 900px)  {
+
+}
+
+/****************************************************************************************/
 /* kaart */
+/****************************************************************************************/
 
 .map {
 	margin: 0;
@@ -165,7 +237,19 @@ body {
 	padding-left: 1rem;
 }
 
+@media (min-width: 900px) {
+
+	.map {
+		max-width: 90%;
+		margin-left: 5%;
+		margin-bottom: 5%;
+	}
+
+}
+
+/****************************************************************************************/
 /* overzicht */
+/****************************************************************************************/
 
 ul {
 	list-style-type: none;
@@ -227,7 +311,56 @@ li {
 	width: 7em;
 }
 
+@media (min-width: 900px) {
+
+	.overzicht {
+		max-width: 90%;
+		margin-left: 5%;
+		margin-bottom: 5%;
+	}
+
+	.beginbalk {
+		margin-left: 0;
+		max-width: 100%;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.stad {
+		width: 90%;
+		border: none;
+	}
+
+	.naam {
+		max-width: 42.5%;
+		flex-grow: 1;
+	}
+
+	.utrecht {
+		border: solid 2px var(--purple);
+	}
+
+	.amsterdam {
+		border: solid 2px var(--purple);
+	}
+
+	.rotterdam {
+		border: none;
+	}
+
+	.schiedam {
+		border: none;
+	}
+
+}
+
+/****************************************************************************************/
 /*knop*/
+/****************************************************************************************/
 
 .button {
 	background-color: var(--blue);
@@ -273,7 +406,23 @@ li {
 	position: relative;
 }
 
+@media (min-width: 900px) {
+
+	.button {
+		display: none;
+		width: 5em;
+		height: 2em;
+	}
+
+	.more-info {
+		max-height: 400px;
+		padding-top: 1em;
+	}
+}
+
+/****************************************************************************************/
 /*footer*/
+/****************************************************************************************/
 
 footer {
 	background-color: var(--black);
@@ -304,65 +453,14 @@ a {
 	height: 84px;
 }
 
+/****************************************************************************************/
 /* responsive maken */
+/****************************************************************************************/
 
 @media (min-width: 900px) {
+	
 	:focus {
 		outline: solid 2px var(--white);
-	}
-
-	.logo {
-		display: none;
-	}
-
-	.logo1 {
-		display: block;
-		width: auto;
-		height: 84px;
-		align-self: flex-start;
-	}
-
-	.nav {
-		margin-top: 0;
-		top: 0;
-		height: 84px;
-		display: block;
-		position: static;
-	}
-
-	.menu-button {
-		display: none;
-	}
-
-	.menu-content {
-		display: flex;
-		background-color: var(--purple);
-	}
-
-	.nav {
-		height: 84px;
-		top: 0;
-		z-index: 0;
-	}
-
-	.menu-content li {
-		background-color: var(--purple);
-		/* border: 1px solid var(--blue); */
-		padding: 0;
-		margin: 0rem 0.75rem;
-		flex-wrap: nowrap;
-		width: auto;
-		height: 84px;
-	}
-
-	.menu-content a {
-		background-color: var(--purple);
-		color: var(--white);
-		margin: 0;
-	}
-
-	.menu-content a:hover {
-		color: var(--black);
 	}
 
 	h1 {
@@ -386,63 +484,7 @@ a {
 		height: auto;
 	}
 
-	.map {
-		max-width: 90%;
-		margin-left: 5%;
-		margin-bottom: 5%;
-	}
-
-	.overzicht {
-		max-width: 90%;
-		margin-left: 5%;
-		margin-bottom: 5%;
-	}
-
-	.beginbalk {
-		margin-left: 0;
-		max-width: 100%;
-	}
-
-	.container {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-
-	.stad {
-		width: 90%;
-		border: none;
-	}
-
-	.naam {
-		max-width: 42.5%;
-		flex-grow: 1;
-	}
-
-	.utrecht {
-		border: solid 2px var(--purple);
-	}
-
-	.amsterdam {
-		border: solid 2px var(--purple);
-	}
-
-	.rotterdam {
-		border: none;
-	}
-
-	.schiedam {
-		border: none;
-	}
-
-	.button {
-		display: none;
-		width: 5em;
-		height: 2em;
-	}
-
-	.more-info {
-		max-height: 400px;
-		padding-top: 1em;
-	}
+	
+	
+	
 }

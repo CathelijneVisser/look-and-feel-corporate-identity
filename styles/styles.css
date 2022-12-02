@@ -92,17 +92,6 @@ header {
 }
 
 @media (min-width: 900px) {
-	.logo {
-		display: none;
-	}
-
-	.logo1 {
-		display: block;
-		width: auto;
-		height: 84px;
-		align-self: flex-start;
-	}
-
 	.nav {
 		margin-top: 0;
 		top: 0;
@@ -170,7 +159,16 @@ body {
 }
 
 @media (min-width: 900px) {
+	.logo {
+		display: none;
+	}
 
+	.logo1 {
+		display: block;
+		width: auto;
+		height: 84px;
+		align-self: flex-start;
+	}
 }
 
 /***************************************************************************************aa/
@@ -221,8 +219,7 @@ body {
 	max-width: 30em;
 }
 
-@media (min-width: 900px)  {
-
+@media (min-width: 900px) {
 }
 
 /****************************************************************************************/
@@ -238,13 +235,11 @@ body {
 }
 
 @media (min-width: 900px) {
-
 	.map {
 		max-width: 90%;
 		margin-left: 5%;
 		margin-bottom: 5%;
 	}
-
 }
 
 /****************************************************************************************/
@@ -312,7 +307,6 @@ li {
 }
 
 @media (min-width: 900px) {
-
 	.overzicht {
 		max-width: 90%;
 		margin-left: 5%;
@@ -355,7 +349,6 @@ li {
 	.schiedam {
 		border: none;
 	}
-
 }
 
 /****************************************************************************************/
@@ -407,7 +400,6 @@ li {
 }
 
 @media (min-width: 900px) {
-
 	.button {
 		display: none;
 		width: 5em;
@@ -458,7 +450,6 @@ a {
 /****************************************************************************************/
 
 @media (min-width: 900px) {
-	
 	:focus {
 		outline: solid 2px var(--white);
 	}
@@ -483,8 +474,4 @@ a {
 		width: 5em;
 		height: auto;
 	}
-
-	
-	
-	
 }

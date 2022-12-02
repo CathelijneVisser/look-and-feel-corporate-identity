@@ -204,6 +204,7 @@ body {
 	padding: 1rem;
 	position: relative;
 	color: var(--white);
+	/* margin: 1rem; */
 }
 
 .inleiding h2 {
